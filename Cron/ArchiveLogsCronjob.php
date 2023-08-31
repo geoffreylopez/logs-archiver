@@ -19,8 +19,6 @@ class ArchiveLogsCronjob
 
     /**
      * Cronjob Description
-     *
-     * @return void
      */
     public function execute(): void
     {
