@@ -1,13 +1,22 @@
 {
   "name": "web-atypique/log-archiver",
   "version": "1.0.0",
-  "description": "N/A",
+  "description": "Archive automatically magento 2 logs in var/log folder",
   "type": "magento2-module",
   "require": {
-    "magento/framework": "*"
+    "magento/framework": ">=103.0.6",
+    "php": "~8.1.0"
   },
   "license": [
     "Proprietary"
+  ],
+  "authors": [
+    {
+      "name": "Web Atypique",
+      "email": "geoffrey@web-atypique.fr",
+      "homepage": "https://web-atypique.fr",
+      "role": "Leader"
+    }
   ],
   "autoload": {
     "files": [
