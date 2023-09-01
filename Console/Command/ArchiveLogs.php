@@ -2,6 +2,7 @@
 
 namespace WebAtypique\LogArchiver\Console\Command;
 
+use Magento\Framework\Console\Cli;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -33,10 +34,11 @@ class ArchiveLogs extends Command
     /**
      * CLI command description.
      */
-    protected function execute(InputInterface $input, OutputInterface $output): void
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $output->writeln('Start to archive logs');
         $this->_archiverModel->execute();
         $output->writeln('End to archive logs');
+        return Cli::RETURN_SUCCESS;
     }
 }
