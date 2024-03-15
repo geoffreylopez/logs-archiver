@@ -1,5 +1,6 @@
 # Web Atypique - Logs Archiver Magento 2 Changelog
 
+## Online Documentation
 https://web-atypique.fr/magento-2-log-archiver
 
 ## Pre-requisites
@@ -40,3 +41,6 @@ bin/magento logs:archive
 ### Is it free?
 
 Yes, it's fully free and open-source.
+
+## Need More Features?
+Please contact us to get a quote https://web-atypique.fr/contact
