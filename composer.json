@@ -1,5 +1,6 @@
 {
   "name": "web-atypique/log-archiver",
+  "version": "1.0.1",
   "description": "Archive automatically magento 2 logs in var/log folder",
   "type": "magento2-module",
   "require": {
