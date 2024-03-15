@@ -1,4 +1,4 @@
-# Web Atypique - Logs Archiver Magento 2 Changelog
+# Web Atypique - Logs Archiver Magento 2
 
 ## Online Documentation
 https://web-atypique.fr/magento-2-log-archiver
