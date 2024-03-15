@@ -99,7 +99,7 @@ class Archive
         }
     }
 
-    private function _getLogFiles($logDir): array
+    private function _getLogFiles(string $logDir): array
     {
         $result = array();
         $scandir = scandir($logDir);
