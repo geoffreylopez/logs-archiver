@@ -43,4 +43,4 @@ bin/magento logs:archive
 Yes, it's fully free and open-source.
 
 ## Need More Features?
-Please contact us to get a quote https://web-atypique.fr/contact
+Please contact us to https://web-atypique.fr/contact
