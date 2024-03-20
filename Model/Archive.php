@@ -3,25 +3,35 @@
 namespace WebAtypique\LogArchiver\Model;
 
 use Magento\Framework\Exception\FileSystemException;
+use Magento\Framework\Filesystem\DirectoryList;
+use Psr\Log\LoggerInterface;
+use WebAtypique\LogArchiver\Helper\Data;
 
 class Archive
 {
     const ARCHIVE_PATH = '/archives/';
 
-    protected \Magento\Framework\Filesystem\DirectoryList $_dir;
-    protected \Psr\Log\LoggerInterface $_logger;
+    protected DirectoryList $_dir;
+    protected Data $_helper;
+    protected LoggerInterface $_logger;
 
     public function __construct(
-        \Magento\Framework\Filesystem\DirectoryList $dir,
-        \Psr\Log\LoggerInterface $logger
+        DirectoryList $dir,
+        Data $helper,
+        LoggerInterface $logger
     )
     {
         $this->_dir = $dir;
+        $this->_helper = $helper;
         $this->_logger = $logger;
     }
 
     public function execute(): void
     {
+        if(!$this->_helper->isModuleEnable()){
+            return;
+        }
+
         try {
             $logDir = $this->_dir->getPath('log');
 

@@ -29,6 +29,16 @@ The archived logs are stored in the `var/log/archive` directory in .gz files.
 ![web-atypique-archive-logs-screen](https://github.com/geoffreylopez/logs-archiver/assets/22189480/a3396274-2e66-42b3-941b-3dc1d5e9b077)
 
 
+### How I can disable the module?
+
+Yes, you can disable the module by running the following command:
+```
+bin/magento config:set system/log_archiver/enabled 0
+bin/magento cache:flush
+```
+
+Or via the admin panel in `Stores > Configuration > Advanced > System > Log Archiver`
+
 ### Is it automatic?
 
 Yes, the logs are automatically archived every day at 06am.
