@@ -16,6 +16,10 @@ bin/magento setup:upgrade
 bin/magento cache:flush
 ```
 
+### Via Magento Marketplace
+
+- Go to Magento Marketplace https://commercemarketplace.adobe.com/webatypique-log-archiver.html
+
 ## How it's work
 
 ### Where are the archived logs?
