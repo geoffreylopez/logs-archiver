@@ -24,6 +24,7 @@ bin/magento cache:flush
 - Archive logs in .gz files
 - Configure the cron scheduler for archiving logs (default is every day at 06am)
 - Enable/Disable the module
+- Archive logs manually with the command `bin/magento logs:archive`
 
 ## How it's work
 
