@@ -9,8 +9,9 @@
                     <label>Enabled Log Archiver</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="archiver_cron_schedule" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="archiver_cron_schedule" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Archiver Cron Schedule</label>
+                    <comment>crontab.guru can help you to parameter this field.</comment>
                     <depends>
                         <field id="enabled">1</field>
                     </depends>
