@@ -18,7 +18,7 @@ bin/magento cache:flush
 
 ### Via Magento Marketplace
 
-- Go to Magento Marketplace https://commercemarketplace.adobe.com/webatypique-log-archiver.html
+Go to Magento Marketplace https://commercemarketplace.adobe.com/webatypique-log-archiver.html
 
 ## Features
 - Archive logs in .gz files
