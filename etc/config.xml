@@ -5,6 +5,7 @@
         <system>
             <log_archiver>
                 <enabled>1</enabled>
+                <archiver_cron_schedule>0 6 * * *</archiver_cron_schedule>
             </log_archiver>
         </system>
     </default>

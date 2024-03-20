@@ -4,7 +4,7 @@
     <group id="default">
         <job name="webatypique_logarchiver_archive_logs_cronjob" instance="WebAtypique\LogArchiver\Cron\ArchiveLogsCronjob"
              method="execute">
-            <schedule>0 6 * * *</schedule>
+            <config_path>system/log_archiver/archiver_cron_schedule</config_path>
         </job>
     </group>
 </config>

@@ -20,6 +20,11 @@ bin/magento cache:flush
 
 - Go to Magento Marketplace https://commercemarketplace.adobe.com/webatypique-log-archiver.html
 
+## Features
+- Archive logs in .gz files
+- Configure the cron scheduler for archiving logs (default is every day at 06am)
+- Enable/Disable the module
+
 ## How it's work
 
 ### Where are the archived logs?
@@ -28,6 +33,9 @@ The archived logs are stored in the `var/log/archive` directory in .gz files.
 
 ![web-atypique-archive-logs-screen](https://github.com/geoffreylopez/logs-archiver/assets/22189480/a3396274-2e66-42b3-941b-3dc1d5e9b077)
 
+### Where can I configure the module?
+
+You can configure the module in `Stores > Configuration > Advanced > System > Log Archiver`
 
 ### How I can disable the module?
 
