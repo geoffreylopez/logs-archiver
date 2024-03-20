@@ -50,14 +50,9 @@ Or via the admin panel in `Stores > Configuration > Advanced > System > Log Arch
 
 ### Is it automatic?
 
-Yes, the logs are automatically archived every day at 06am.
-Here is the cronjob configuration:
-```
-<job name="webatypique_logarchiver_archive_logs_cronjob" instance="WebAtypique\LogArchiver\Cron\ArchiveLogsCronjob"
-             method="execute">
-            <schedule>0 6 * * *</schedule>
-</job>
-```
+Yes, the logs are automatically archived every day at 06am by default.
+You can configure the cronjob scheduler here: `Stores > Configuration > Advanced > System > Log Archiver`
+
 
 You can also launch the archiving manually with the following command:
 ```
