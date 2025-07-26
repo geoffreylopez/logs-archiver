@@ -17,7 +17,7 @@ class ArchiveLogs extends Command
     public function __construct(
         Archive $archiverModel,
         Data $helper,
-        string $name = null
+        ?string $name = null
     )
     {
         parent::__construct($name);
